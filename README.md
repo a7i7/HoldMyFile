@@ -52,4 +52,3 @@ File Restored successfully. File address is /home/dave/file.txt
 ```
 ### Notes
 - Has only been tested on linux so far. Not sure if it runs on Windows and Mac as well.
-- Does not support non plain-text files. Will be adding support for binary files as well.

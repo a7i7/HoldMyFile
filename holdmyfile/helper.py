@@ -18,11 +18,21 @@ def netcat(hostname, port, content):
     response = response[:-3][1:]
     return response
 
+def convert_to_three_digits(character):
+    res = ''
+    res = res + str(ord(character))
+    while len(res)<3:
+        res = '0' + res
+    return res
+
 def retrive_from_file(file_path):
     decoded_content = ''
-    file = open(file_path,'r')
-    for character in file:
-        decoded_content = decoded_content + character
+    file = open(file_path,'rb')
+    while True:
+        c = file.read(1)
+        if not c:
+            break
+        decoded_content = decoded_content + convert_to_three_digits(c)
     return decoded_content
 
 def retrive_from_url(file_url):

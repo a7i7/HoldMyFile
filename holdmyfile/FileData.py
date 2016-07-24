@@ -41,8 +41,11 @@ class FileData:
 
 	def restore_file(self):
 		content = self._get_content()
-		file = open(self.file_path,'w')
-		file.write(content)
+		file = open(self.file_path,'wb')
+		start_index = 0
+		while start_index<len(content):
+			current_character = content[start_index:start_index+3]
+			file.write(chr(int(current_character)))
+			start_index+=3
 		file.close()
 		return self.file_path
-
