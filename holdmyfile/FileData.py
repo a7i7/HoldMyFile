@@ -39,8 +39,10 @@ class FileData:
 		self.backed_up = True
 		return self.file_url
 
-	def restore_file(self):
+	def restore_file(self,forced_path = None):
 		content = self._get_content()
+		if forced_path!=None:
+			self.file_path = forced_path
 		file = open(self.file_path,'wb')
 		start_index = 0
 		while start_index<len(content):

@@ -36,7 +36,8 @@ Usage: holdmyfile [OPTIONS] MODE FILE_DETAILS
   successfully. File address is /home/dave/file.txt
 
 Options:
-  --help  Show this message and exit.
+  --path TEXT  Override default path to save file
+  --help       Show this message and exit.
 ```
 
 ### A real quick tutorial
