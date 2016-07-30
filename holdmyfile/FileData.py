@@ -46,8 +46,8 @@ class FileData:
 		file = open(self.file_path,'wb')
 		start_index = 0
 		while start_index<len(content):
-			current_character = content[start_index:start_index+3]
-			file.write(chr(int(current_character)))
-			start_index+=3
+			current_character = content[start_index:start_index+2]
+			file.write(chr(convert_back_from_two_bytes(current_character)))
+			start_index+=2
 		file.close()
 		return self.file_path

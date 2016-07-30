@@ -53,3 +53,4 @@ File Restored successfully. File address is /home/dave/file.txt
 ```
 ### Notes
 - Has only been tested on linux so far. Not sure if it runs on Windows and Mac as well.
+- There is a limit to the filesize that can be uploaded. It is limited by speed of python and termbin.com backend software. Any rough limit of the filesize is 330 kb.
