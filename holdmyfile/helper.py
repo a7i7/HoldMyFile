@@ -32,7 +32,7 @@ def convert_back_from_two_bytes(two_bytes):
     second_part = ord(two_bytes[1])-ord('a')
     return 16*first_part+second_part
 
-def retrive_from_file(file_path):
+def retrieve_from_file(file_path):
     decoded_content = ''
     file = open(file_path,'rb')
     while True:
@@ -42,6 +42,6 @@ def retrive_from_file(file_path):
         decoded_content = decoded_content + convert_to_two_bytes(c)
     return decoded_content
 
-def retrive_from_url(file_url):
+def retrieve_from_url(file_url):
     encoded_content = urllib2.urlopen(file_url).read()
     return encoded_content

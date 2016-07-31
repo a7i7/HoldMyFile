@@ -6,13 +6,13 @@ class FileData:
 		if file_address.startswith('http://termbin.com'):
 			self.file_url = file_address
 			self.backed_up = True
-			self._encoded_file_content = retrive_from_url(file_address)
+			self._encoded_file_content = retrieve_from_url(file_address)
 			self.file_content = None
 		else:
 			self.file_path = file_address
 			self.backed_up = False
 			self._encoded_file_content = None
-			self.file_content = retrive_from_file(file_address)
+			self.file_content = retrieve_from_file(file_address)
 
 	def _get_content(self):
 		if self.file_content==None:

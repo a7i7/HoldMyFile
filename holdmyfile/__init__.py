@@ -26,7 +26,7 @@ def restore(file_id,path):
 		print "Invalid formatting of text. Could not extract text"
 		return
 	except IOError:
-		print "Couldnot create file. The file address is invalid"
+		print "Could not create file. The file address is invalid"
 		return
 	print "File Restored successfully. File address is %s" %file_path
 

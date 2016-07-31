@@ -13,5 +13,6 @@ setup(
 		'console_scripts': [
 			'holdmyfile = holdmyfile.cli:main'
 		]
-	}
+	},
+	test_suite="tests"
 )
