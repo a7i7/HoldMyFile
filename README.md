@@ -7,17 +7,17 @@ HoldMyFile is a python program that can backup your file on the web with a singl
 
 
 ### Requirements
-* Python
+* Python 2
 * Python modules: click
 
 ### Quickstart
 Install from source
 ```shell
-$ git clone https://github.com/JuanPotato/Legofy.git
-$ cd HoldMyFile
-$ python setup.py install
+git clone https://github.com/a7i7/HoldMyFile.git
+cd HoldMyFile
+python setup.py install
 ```
-Make sure pip is installed before hand.
+Make sure pip is installed beforehand.
 
 ### Usage
 ```
